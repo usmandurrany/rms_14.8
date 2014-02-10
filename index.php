@@ -1,6 +1,7 @@
-<?php require_once ("auth/includes/connect.php"); ?>
+<?php require_once ( "auth/includes/connect.php"); ?>
 
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -63,47 +64,77 @@
     <div class="jumbotron">
         <div class="container">
             <div class="col-md-4" style="border-right: 1px solid #b8b8b8">
-                <form class="form" role="form">
-                    <h3><u>Student Login</u></h3>
-                    
-                    
-                       <p> Epnum:<br>
-                        <input type="text" class="form-control"/></p>
-                    
-                    
-                       <p> Password:<br>
-                        <input type="password" class="form-control"/></p>
-               
-                    <button type="submit" class="btn pull-right">Sign in</button>
+                <form id="form_login" class="form" role="form" name="login" action="auth/includes/process.php" method="post">
+                    <h3>
+                        <u>Student Login</u>
+                    </h3>
+
+
+                    <p>Epnum:
+                        <br>
+                        <input type="text" name="epnum" class="form-control" />
+                    </p>
+
+
+                    <p>Password:
+                        <br>
+                        <input type="password" name="password" class="form-control" />
+                    </p>
+
+                    <button type="submit" name="login" class="btn pull-right">Sign in</button>
                 </form>
             </div>
             <div class="col-md-4" style="border-right: 1px solid #b8b8b8">
                 <form class="form" role="form">
-                    <h3><u>Faculty/Admin Login</u></h3>
-                    
-                    
-                       <p> Username:<br>
-                        <select class="form-control"><option value="admin">Administrator</option><option value="faculty">Faculty</option></select></p>
-                    
-                    
-                       <p> Password:<br>
-                        <input type="password" class="form-control"/></p>
-               
+                    <h3>
+                        <u>Faculty/Admin Login</u>
+                    </h3>
+
+
+                    <p>Username:
+                        <br>
+                        <select class="form-control">
+                            <option value="admin">Administrator</option>
+                            <option value="faculty">Faculty</option>
+                        </select>
+                    </p>
+
+
+                    <p>Password:
+                        <br>
+                        <input type="password" class="form-control" />
+                    </p>
+
                     <button type="submit" class="btn pull-right">Sign in</button>
                 </form>
-                </div>
-                <div class="col-md-4">
-                
-                    <p><h4><u>Announcement #1</u></h4>
-                    <blockquote>Portal now under development.<small>Admin</small></blockquote></p>
-               
-                </div>
+            </div>
             <div class="col-md-4">
-                
-                    <p><h4><u>Announcement #2</u></h4>
-                    <blockquote>Setting up Envoirment for developing portal.<small>Admin</small></blockquote></p>
-               
-                </div>
+
+                <p>
+                    <h4>
+                        <u>Announcement #1</u>
+                    </h4>
+                    <blockquote>Portal now under development.
+                        <small>Admin</small>
+                    </blockquote>
+                </p>
+
+            </div>
+            <div class="col-md-4">
+                <div style="border-bottom: 1px solid #b8b8b8"></div>
+            </div>
+            <div class="col-md-4">
+
+                <p>
+                    <h4>
+                        <u>Announcement #2</u>
+                    </h4>
+                    <blockquote>Setting up Envoirment for developing portal.
+                        <small>Admin</small>
+                    </blockquote>
+                </p>
+
+            </div>
         </div>
     </div>
 
@@ -111,23 +142,41 @@
         <!-- Example row of columns -->
         <div class="row">
             <div class="col-md-4">
-                
-                    <p><h4><u>Announcement #2</u></h4>
-                    <blockquote>Setting up Envoirment for developing portal.<small>Admin</small></blockquote></p>
-               
-                </div>
+
+                <p>
+                    <h4>
+                        <u>Announcement #2</u>
+                    </h4>
+                    <blockquote>Setting up Envoirment for developing portal.
+                        <small>Admin</small>
+                    </blockquote>
+                </p>
+
+            </div>
             <div class="col-md-4">
-                
-                    <p><h4><u>Announcement #2</u></h4>
-                    <blockquote>Setting up Envoirment for developing portal.<small>Admin</small></blockquote></p>
-               
-                </div>
+
+                <p>
+                    <h4>
+                        <u>Announcement #2</u>
+                    </h4>
+                    <blockquote>Setting up Envoirment for developing portal.
+                        <small>Admin</small>
+                    </blockquote>
+                </p>
+
+            </div>
             <div class="col-md-4">
-                
-                    <p><h4><u>Announcement #2</u></h4>
-                    <blockquote>Setting up Envoirment for developing portal.<small>Admin</small></blockquote></p>
-               
-                </div>
+
+                <p>
+                    <h4>
+                        <u>Announcement #2</u>
+                    </h4>
+                    <blockquote>Setting up Envoirment for developing portal.
+                        <small>Admin</small>
+                    </blockquote>
+                </p>
+
+            </div>
         </div>
 
         <hr>
