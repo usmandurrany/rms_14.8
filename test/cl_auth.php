@@ -4,10 +4,10 @@ include ("../auth/includes/db_c_vars.php");
 
 class auth {
 
-	public $username="";
-	public $password = "";
-	public $type = "";
-	public $loginerror="NULL";
+	private $username="";
+	private $password = "";
+	private $type = "";
+	private $loginerror="NULL";
    
  function auth($g_username,$g_password,$g_type)
  {
@@ -47,7 +47,7 @@ class auth {
 		$this->loginerror = "Login sucessful.";
 		}
 	}
-	else $this->loginerror = "Incorrect username or password.";
+	else $this->loginerror = "Please select a valid type.";
 	
 	}
 
